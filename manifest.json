@@ -1,0 +1,105 @@
+{
+    "_version": "1.32.0",
+    "sap.app": {
+        "id": "mymvc",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "0.0.1"
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}"
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+    "sap.ui5": {
+        "dependencies": {
+            "minUI5Version": "1.97.2",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {},
+                "sap.f": {}
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "com.sap.mynorthwindapp.i18n.i18n"
+                }
+            },
+            "": {
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "model/mockData/poData.json"
+            }
+        },
+        "resources": {
+            "css": []
+        },
+        "rootView": {
+            "viewName": "mymvc.view.App",
+            "type": "XML",
+            "async": true,
+            "id": "idApp"
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "viewPath": "mymvc.view",
+                "controlAggregation": "pages",
+                "controlId": "idApp",
+                "async": true
+            },
+            "routes": [
+                {
+                    "pattern": "", 
+                    "name": "list",
+                    "target": [
+                        "Donald"
+                    ]
+                },
+                {
+                    "pattern": "Orders",
+                    "name": "object",
+                    "target": [
+                        "Donald",
+                        "Hulk"
+                    ]
+                }
+            ],
+            "targets": {
+                "Donald": {
+                    "viewName": "First",
+                    "controlAggregation": "masterPages",
+                   
+                    "viewId": "idFirst"
+                },
+                "Hulk": {
+                    "viewName": "Second",
+                    "viewId": "idSecond",
+                    
+                    "controlAggregation": "detailPages"
+                }
+            }
+        }
+    }
+}

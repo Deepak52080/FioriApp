@@ -1,0 +1,216 @@
+{
+	"purchaseOrders": [{
+			"poNumber": "2000015",
+			"poItems": "10",
+			"storageLocation": "Delhi",
+			"comapanyCode": "100",
+			"image": "sap-icon://manager-insight",
+			"netPrice": "2000",
+			"currency": "INR",
+			"availibilty": "Available",
+			"uom": "Kg"
+		},
+		{
+			"poNumber": "2000016",
+			"poItems": "11",
+			"storageLocation": "Banglore",
+			"comapanyCode": "101",
+			"image": "sap-icon://accept",
+			"netPrice": "2200",
+			"currency": "INR",
+			"availibilty": "In Transit",
+			"uom": "Kg"
+		},
+		{
+
+			"poNumber": "2000017",
+			"poItems": "12",
+			"storageLocation": "Gurgaon",
+			"comapanyCode": "102",
+			"image": "sap-icon://accidental-leave",
+			"netPrice": "3000",
+			"currency": "INR",
+			"availibilty": "Available",
+			"uom": "Kg"
+		},
+		{
+
+			"poNumber": "2000018",
+			"poItems": "13",
+			"storageLocation": "Pune",
+			"comapanyCode": "103",
+			"image": "sap-icon://activity-2",
+			"netPrice": "4000",
+			"currency": "INR",
+			"availibilty": "In Transit",
+			"uom": "Liter"
+		},
+		{
+
+			"poNumber": "2000019",
+			"poItems": "14",
+			"storageLocation": "Hyderabad",
+			"comapanyCode": "104",
+			"image": "sap-icon://add-document",
+			"netPrice": "5000",
+			"currency": "INR",
+			"availibilty": "Not Available",
+			"uom": "Liter"
+		},
+		{
+
+			"poNumber": "2000020",
+			"poItems": "15",
+			"storageLocation": "Karnataka",
+			"comapanyCode": "105",
+			"image": "sap-icon://add-folder",
+			"netPrice": "5500",
+			"currency": "INR",
+			"availibilty": "Not Available",
+			"uom": "Ml"
+		},
+		{
+
+			"poNumber": "2000021",
+			"poItems": "16",
+			"storageLocation": "Andhra Pradesh",
+			"comapanyCode": "106",
+			"image": "sap-icon://appointment",
+			"netPrice": "6000",
+			"currency": "INR",
+			"availibilty": "Available",
+			"uom": "Ml"
+		}, {
+
+			"poNumber": "2000022",
+			"poItems": "17",
+			"storageLocation": "Gangtok",
+			"comapanyCode": "107",
+			"image": "sap-icon://badge",
+			"netPrice": "6500",
+			"currency": "INR",
+			"availibilty": "Available",
+			"uom": "Ml"
+		},
+		{
+
+			"poNumber": "2000023",
+			"poItems": "18",
+			"storageLocation": "Gandhinagar",
+			"comapanyCode": "108",
+			"image": "sap-icon://bookmark",
+			"netPrice": "8000",
+			"currency": "INR",
+			"availibilty": "Available",
+			"uom": "Kg"
+
+
+		}
+	],
+
+	"cities": [{
+
+			"city": "rampur",
+			"state": "anndra pradesh",
+			"famous": "Production"
+		},
+		{
+			"city": "rampur",
+			"state": "anndra pradesh",
+			"famous": "Production"
+		},
+		{
+			"city": "rampur",
+			"state": "anndra pradesh",
+			"famous": "Production"
+		},
+		{
+			"city": "rampur",
+			"state": "anndra pradesh",
+			"famous": "Production"
+		},
+		{
+			"city": "rampur",
+			"state": "anndra pradesh",
+			"famous": "Production"
+		},
+		{
+			"city": "rampur",
+			"state": "anndra pradesh",
+			"famous": "Production"
+		},
+		{
+			"city": "rampur",
+			"state": "anndra pradesh",
+			"famous": "Production"
+		},
+		{
+			"city": "rampur",
+			"state": "anndra pradesh",
+			"famous": "Production"
+		},
+		{
+			"city": "rampur",
+			"state": "anndra pradesh",
+			"famous": "Production"
+		},
+		{
+			"city": "rampur",
+			"state": "anndra pradesh",
+			"famous": "Production"
+		}
+	],
+
+	"distributor": [{
+
+			"name": "Raghav India Pvt Ltd",
+			"city": "katra",
+			"contactName": "Mr.Raghav",
+			"phoneNo": "8090996475",
+			"supplyingSince": "10-01-2018",
+			"status": "Available"
+
+		},
+		{
+
+			"name": "Sameer India Pvt Ltd",
+			"city": "kenya",
+			"contactName": "Mr.Sameer",
+			"phoneNo": "8090996480",
+			"supplyingSince": "10-01-2018",
+			"status": "Available"
+
+		},
+		{
+
+
+			"name": "Abhinandan India Pvt Ltd",
+			"city": "Japan",
+			"contactName": "Mr.Abhi",
+			"phoneNo": "8090996478",
+			"supplyingSince": "10-01-2015",
+			"status": "Obsolete"
+
+
+		},
+		{
+
+
+			"name": "Suraj India Pvt Ltd",
+			"city": "Australia",
+			"contactName": "Mr.Suraj",
+			"phoneNo": "8090996477",
+			"supplyingSince": "10-01-2016",
+			"status": "New"
+		},
+		{
+
+			"name": "Rajeev India Pvt Ltd",
+			"city": "Mangolia",
+			"contactName": "Mr.Rajeev",
+			"phoneNo": "8090996476",
+			"supplyingSince": "10-01-2017",
+			"status": "New "
+		}
+	]
+}

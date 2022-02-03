@@ -1,0 +1,50 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns="sap.m"  xmlns:mvc="sap.ui.core.mvc" 
+controllerName="mymvc.controller.Second"
+    xmlns:html="http://www.w3.org/1999/xhtml">
+
+    <Page title="Second View">
+
+    <Button text="Navigate to the First Screen" icon="sap-icon://nav-back" press="onBack"></Button>
+
+        <ObjectHeader title="{poNumber}" intro="{storageLocation}"
+                icon="{image}" number="{poItems}" numberUnit="{uom}">
+        </ObjectHeader>
+
+        <Table id="idTable" items="{/distributor}">
+            <columns>
+                <Column>
+                    <Label text="Name"/>
+                </Column>
+                <Column>
+                    <Label text="City"/>
+                </Column>
+                <Column>
+                    <Label text="Contact Name"/>
+                </Column>
+                <Column>
+                    <Label text="Phone Number"/>
+                </Column>
+                <Column>
+                    <Label text="Status"/>
+                </Column>
+            </columns>
+
+            <items>
+              <ColumnListItem>
+                <cells>
+                <Text text="{name}"/>
+                <Text text="{city}" />
+                <Text text="{contactName}" />
+                <Text text="{phoneNo}" />
+                <ObjectStatus text="{status}" />
+            </cells>
+
+        </ColumnListItem>
+
+            </items>
+
+        </Table>
+
+    </Page>
+
+</mvc:View>

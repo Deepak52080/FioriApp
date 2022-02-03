@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Welcome to HTML5</title>
+    <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+            id="sap-ui-bootstrap"
+            data-sap-ui-libs="sap.m"
+            data-sap-ui-theme="sap_bluecrystal"
+            data-sap-ui-resourceRoots='{"mymvc": "./"}'
+            data-sap-ui-xx-bindingSyntax="complex">
+
+
+    </script>
+    <script>
+
+        var oComponentConatiner = new sap.ui.core.ComponentContainer({
+            name:"mymvc"
+        });
+
+        oComponentConatiner.placeAt("content")
+
+
+        
+        // //Creating the container object
+        // var oApp = new sap.m.SplitApp ("idApp", {
+
+        // });
+
+        // //creating first view objcet 
+        // var oFirst = new sap.ui.view({
+        //     id: "idFirst",
+        //     viewName: "mymvc.view.First",
+        //     type: sap.ui.core.mvc.ViewType.XML
+
+        // });
+        // //creating Second view objcet 
+        // var oSecond = new sap.ui.view({
+        //     id: "idSecond",
+        //     viewName: "mymvc.view.Second",
+        //     type: sap.ui.core.mvc.ViewType.XML
+
+        // });
+
+        // //add the child to parent
+        // oApp.addMasterPage(oFirst);
+        // oApp.addDetailPage(oSecond);
+        // oApp.placeAt("content");
+
+    </script>
+</head>
+<body class="sapUiBody">
+  <div id="content"></div>
+</body>
+</html>
