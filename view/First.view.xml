@@ -1,0 +1,64 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns="sap.m"  xmlns:mvc="sap.ui.core.mvc" 
+controllerName="mymvc.controller.First"
+    xmlns:html="http://www.w3.org/1999/xhtml">
+
+    <Page title="First View">
+
+        
+            <Toolbar>
+                <SearchField liveChange="onSearch"/>
+            </Toolbar>
+        
+    
+
+    <!-- <Button icon="sap-icon://action" text="Navigate to the second view" press="onNext"></Button> -->
+
+    <List headerText="My Purchase orders" id="idList" mode="Delete" items="{/purchaseOrders}" delete="onDelete" itemPress="onPoSelect">
+
+        <items>
+            
+            <!-- Main use is for displaying simple data
+            <DisplayListItem label="20000149" value="George International Pvt. Limited">
+            </DisplayListItem>
+            Mainly used to display simple data with icon
+            <StandardListItem icon="https://us.123rf.com/450wm/jumbi/jumbi1908/jumbi190800013/131290623-coconut-leaf-broomstick-rough-duster-sweeper-isolated-on-white-background.jpg?ver=6" title="300001228" description="ABC International Pvt. Limited">
+            </StandardListItem>
+            
+            Mainly used for Supplying data
+            <InputListItem label="How much is your order">
+                <content>
+                    <Input/>
+                </content>
+            </InputListItem>
+            Mainly used for feed link fb/whatsaap
+            <FeedListItem text="Hello. How are you" sender="Deepak Singh" icon="sap-icon://feed">
+            </FeedListItem>
+
+            <CustomListItem>
+                <content>
+                    <Text text="Hope you are doing great"/>
+                    <ToolbarSpacer/>
+                    <Switch/>
+                </content>
+            </CustomListItem>
+            Mainly used for performing some actions on the UI
+            <ActionListItem text="checkout" press="onNext">
+
+            </ActionListItem> -->
+
+            <!-- Maily used for Business Object -->
+            <ObjectListItem  type="Navigation" title="{poNumber}" intro="{storageLocation}"
+                icon="{image}" number="{poItems}" numberUnit="{uom}">
+
+                <!-- <attributes>
+                    <ObjectAttribute text="Company Code: 101" />
+                    <ObjectAttribute text="Purchasing documnet type: ZCXX" />
+                </attributes> -->
+            </ObjectListItem>
+
+        </items>
+    </List>
+
+    </Page>
+
+</mvc:View>
