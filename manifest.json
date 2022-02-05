@@ -43,7 +43,7 @@
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
-                    "bundleName": "com.sap.mynorthwindapp.i18n.i18n"
+                    "bundleName": "mymvc.i18n.i18n"
                 }
             },
             "": {
@@ -78,7 +78,7 @@
                     ]
                 },
                 {
-                    "pattern": "Orders",
+                    "pattern": "Orders/{key}",
                     "name": "object",
                     "target": [
                         "Donald",

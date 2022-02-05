@@ -10,24 +10,31 @@ sap.ui.define(
                 // var oModel = Model.creatPOModel();
                 // sap.ui.getCore().setModel(oModel);
 
+                this.oRouter = this.getOwnerComponent().getRouter();
+
             }, 
-            onNext: function(){
+            onNext: function(index){
 
                 //get the object of app control
 
-                var oApp = sap.ui.getCore().byId("idApp");
-                oApp.to("idSecond");
+                // var oApp = sap.ui.getCore().byId("idApp");
+                // oApp.to("idSecond");
+                this.oRouter.navTo("object", {
+                    key: index
+                });
             },
 
             onPoSelect: function(oEvent){
                 var sPath = oEvent.getParameter("listItem").getBindingContextPath();
-                var oApp = this.getView().getParent().getParent();
+                // var oApp = this.getView().getParent().getParent();
 
-                var oView2 = oApp.getDetailPages()[0];
-                oView2.bindElement(sPath);
+                // var oView2 = oApp.getDetailPages()[0];
+                // oView2.bindElement(sPath);
+
+                var index = sPath.split("/")[sPath.split("/").length -1];
 
                 //to call another function in JS
-                this.onNext();
+                this.onNext(index);
 
             },
 
